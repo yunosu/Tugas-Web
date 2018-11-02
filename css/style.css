@@ -1,0 +1,363 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background-color: #eee;
+	font-family: sans-serif,serif;
+}
+
+.navbar-up {
+	margin-top: -10px;
+	width: 100%;
+	height: 5vh;
+	background-color: #3C3C3C;
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar-up ul {
+	list-style-type: none;
+
+}
+.navbar-up ul.left li h4{
+	margin-top: 5px;
+	font-size: 20px;
+	color: red;
+}
+.navbar-up span {
+	color: white;
+}
+.navbar-up ul.right i {
+	transition: 1s;
+}
+.navbar-up ul.right i:hover {
+	transform: rotate(30deg);
+	color:#2D81B7;
+}
+.navbar-up ul.right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navbar-up li {
+	margin-right: 50px;
+	margin-top: -15px;
+}
+
+i {
+	color:white;
+}
+
+.navbar-down {
+	margin-top: -16px;
+	width: 100%;
+	height: 60px;
+	background-color: #4E8BAE;
+	display: flex;
+
+	justify-content: space-around;
+}
+
+.nav a {
+	justify-content: flex-end;
+	text-decoration: none;
+	color: 	white;
+	text-transform: uppercase;
+	transition: 1s;
+}
+.navbar-down ul {
+	list-style-type: none;
+}
+.navbar-down li img {
+	margin-top: -30px;
+}
+.navbar-down .nav li{
+	margin-right: 30px;
+	display: inline-block;
+	padding: 5px;
+}
+.navbar-down .nav li:hover a{
+	color: #C3C3C3;
+	border-top: 2px solid #BE1A1A;
+	border-bottom: 2px solid black;
+	cursor: pointer;
+}
+
+/*akhir*/
+main .slide {
+	background-image: url(../assets/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	box-shadow: -1px 4px 45px black;
+}
+main .panah {
+	margin: 0 auto;
+	width: 1px;
+	border-top:40px solid black;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent
+}
+
+/*progstudi*/
+.program-studi h1,
+.gallery h1,
+.ekstrakulikuler h1,
+.kontak h1 {
+	font-size: 40px;
+	text-align: center;
+}
+.program-studi .container {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.program-studi .card {
+	width: 23%;
+}
+.program-studi i {
+	color: #eee;
+	border: 2px solid black;
+	padding: 35px;
+	border-radius: 50%;
+	background-color: #535353;
+}
+.program-studi p {
+	text-align: justify;
+}
+/*akhir progstudi*/
+
+/*gallery*/
+.gallery {
+	background-color: #fff;
+}
+.gallery .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.gallery h1 {
+	padding-top: 25px;
+}
+.gallery .card p {
+	text-align: justify;
+}
+.gallery h3 {
+	text-align: center;
+}
+.gallery .card {
+	position: relative;
+	border: 2px solid #eee;
+	padding:10px;
+	width: 22.3%;
+	margin-bottom: 15px;
+}
+.gallery .card img {
+	width: 300px;
+	height: 200px;
+	box-shadow: 2px 1px 10px black;
+}
+
+.gallery .card .btn {
+	display: block;
+	background-color: #ccc;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	color:#B11E1E;
+}
+.gallery .card:hover {
+	opacity: 0.5;
+	background-color: black;
+	color: white;
+}
+.gallery a.page {
+	text-decoration: none;
+	background-color: #ccc;
+	display: block;
+	height: 40px;
+	text-align: center;
+	line-height: 30px;
+	color: green;
+	width: 200px;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+.gallery a.page:hover{
+	background-color: #312E2E;
+	color:white;
+}
+/*akhir gallery*/
+
+/*ekstrakulikuler*/
+
+.ekstrakulikuler {
+	margin-top: -30px;
+	background-image: url(../assets/back-pen.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 80px;
+}
+.ekstrakulikuler .container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.ekstrakulikuler h1 {
+	padding-top: 30px;
+}
+.ekstrakulikuler h3 {
+	text-align: center;
+	background-color: blue;
+	color: white;
+	border-radius: 5px;
+	transition: 1s;
+}
+.ekstrakulikuler h3:hover {
+	background-color: red;
+}
+.ekstrakulikuler img {
+	width: 350px;
+	height: 300px;
+}
+.ekstrakulikuler .card-1 img,
+.ekstrakulikuler .card-2 img,
+.ekstrakulikuler .card-3 img {
+	margin-top: 3rem;
+	height: 50vh;
+	border-radius: 50%;
+	border: 2px solid #eee;
+	box-shadow: 2px 2px 12px black;
+}
+/*akhir ekstrakulikuler*/
+.kontak .container {
+	position: relative;
+	margin-bottom: 50px;
+}
+.kontak .container button.a {
+	height: 40px;
+	width: 10%;
+	background-color: #113D98;
+	color:#ccc;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 2px 2px 12px black;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.kontak .container .a:hover {
+	background-color: red;
+}
+footer .atas {
+	border-bottom: 50px solid red;
+	border-right: 30px solid transparent;
+	border-left: 30px solid transparent;
+	width: 5px;
+	position: absolute;
+	right: 50px;
+	top: -30px;
+}
+
+footer {
+	position: relative;
+	margin-top: 30px;
+	background-color: #323232;
+	color: #eee;
+	padding: 10px;
+}
+footer .container {
+	display: flex;
+	margin: 0 auto;
+	width: 80%;
+}
+footer ul li {
+	list-style-type: none;
+}
+footer a {
+	color: red;
+}
+footer .left,
+footer .center,
+footer .right {
+	width: 50%;
+}
+
+
+/*query*/
+
+@media screen and (max-width: 788px) {
+	.navbar-up .left {
+		display: none;
+	}
+	.program-studi .container {
+		display: inline-block;
+		width: 100%;
+	}
+	.program-studi .card {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.gallery .container {
+		display: inline-block;
+		width: 100%;
+	}
+	.gallery .card {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.gallery img {
+		margin-left: 50px;
+	}
+	.kontak .container {
+		padding: 5px;
+	}
+	.kontak button.a{
+		display: flex;
+		padding-right: 50px;
+		padding-left: 20px;
+		font-size: 15px;
+		text-indent: 29px;
+	}
+	footer .container {
+		display: inline-block;
+		width: 100%;
+	}
+	footer .left,
+	footer .right {
+		display: block;
+		width: 97%;
+		background-color: #0F588B;
+		padding: 5px;
+	}
+	footer h1 , h3 {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 1008px) {
+	.navbar-down .nav li {
+		background-color: red;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 1270px ){
+	.gallery .container {
+		display: inline-block;
+		width: 100%;
+	}
+	.gallery .card {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
